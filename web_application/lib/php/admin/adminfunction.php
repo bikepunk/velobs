@@ -1428,8 +1428,8 @@ Veuillez contacter les services techniques de votre commune.
 Cordialement, l\'Association 2 pieds 2 roues :)';
 								}
 
-								$headers = 'From: toulouse@fubicy.org' . "\r\n" .
-								'Reply-To: toulouse@fubicy.org' . "\r\n" .
+								$headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+								'Reply-To: 2p2r@le-pic.org' . "\r\n" .
 								'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
 								'X-Mailer: PHP/' . phpversion();
 								mail($to, $subject, $message, $headers);
@@ -1485,8 +1485,8 @@ Le nouvel enregistrement que vous avez envoyé a été modéré par l\'associati
 Cordialement, l\'Association 2 pieds 2 roues :)';
                                 }
 
-								$headers = 'From: toulouse@fubicy.org' . "\r\n" .
-								'Reply-To: toulouse@fubicy.org' . "\r\n" .
+								$headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+								'Reply-To: 2p2r@le-pic.org' . "\r\n" .
 								'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
 								'X-Mailer: PHP/' . phpversion();
 								mail($to, $subject, $message, $headers);
@@ -1595,8 +1595,9 @@ Voici le commentaire final de l\'association : '.$comment.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
                             }
 
-							$headers = 'From: toulouse@fubicy.org' . "\r\n" .
-							'Reply-To: toulouse@fubicy.org' . "\r\n" .
+							$headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+							'Reply-To: 2p2r@le-pic.org' . "\r\n" .
+							'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
 							'X-Mailer: PHP/' . phpversion();
 							mail($to, $subject, $message, $headers);
 						}
@@ -1657,8 +1658,8 @@ Voici le commentaire final de l\'association : '.$comment.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
                             }
 
-                            $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                            'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                            $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                            'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                             'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                             'X-Mailer: PHP/' . phpversion();
                             mail($to, $subject, $message, $headers);
@@ -1711,8 +1712,8 @@ Le problème que vous avez identifié nous a déjà relaté par un autre observa
 Cordialement, l\'Association 2 pieds 2 roues :)';
                             }
 
-                            $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                            'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                            $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                            'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                             'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                             'X-Mailer: PHP/' . phpversion();
                             mail($to, $subject, $message, $headers);
@@ -1790,8 +1791,8 @@ Lien vers la modération : '.URL.'/admin.html?id='.$id_poi.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
                         }
 
-						$headers = 'From: toulouse@fubicy.org' . "\r\n" .
-						'Reply-To: toulouse@fubicy.org' . "\r\n" .
+						$headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+						'Reply-To: 2p2r@le-pic.org' . "\r\n" .
 						'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
 						'X-Mailer: PHP/' . phpversion();
 
@@ -1820,8 +1821,8 @@ Le pole '.$lib_pole.' a modifié l\'enregistrement n°'.$id_poi.'.
 Veuillez consulter l\'interface d\'administration pour voir cette modification.
 Lien vers la modération : '.URL.'/admin.html?id='.$id_poi.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
-                            $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                            'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                            $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                            'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                             'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                             'X-Mailer: PHP/' . phpversion();
 
@@ -3627,8 +3628,8 @@ Cordialement, l\'Association 2 pieds 2 roues :)';
 Un nouvel enregistrement a été ajouté sur le pole - '.$lib_pole.' -. Veuillez vous connecter à l\'interface d\'administration pour le modérer.
 Lien vers la modération : '.URL.'/admin.html?id='.$max.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
-				$headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                'Reply-To: toulouse@fubicy.org' . "\r\n" .
+				$headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                 'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
 				$details = '
@@ -3671,8 +3672,8 @@ Cordialement, l\'Association 2 pieds 2 roues :)';
 Un nouvel enregistrement a été ajouté sur le pole - '.$lib_pole.' -. Veuillez vous connecter à l\'interface d\'administration pour le modérer.
 Lien vers la modération : '.URL.'/admin.html?id='.$max.'
 Cordialement, l\'Association 2 pieds 2 roues :)';
-                $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                 'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
                 $details = '
@@ -4062,7 +4063,7 @@ Cordialement, l\'Association 2 pieds 2 roues :)';
 
                 /* envoi d'un mail aux administrateurs */
                 //$to      = 'observations_adherents_assovelo@le-pic.org';
-                $subject = '[Asso vélo Toulouse] Nouveau commentaire à modérer sur le POI n°'.$id_poi;
+                $subject = '[Association 2 pieds 2 roues] Nouveau commentaire à modérer sur le POI n°'.$id_poi;
                 $message = 'Bonjour !
 Un nouveau commentaire a été ajouté sur le POI n°'.$id_poi.'. Veuillez vous connecter à l\'interface d\'administration pour le modérer.
 Lien vers la modération : '.URL.'/admin.html?id='.$id_poi.'
@@ -4073,8 +4074,9 @@ Cordialement, l\'application VelObs :)';
      '.$text.'
                 ';
                 $message .= $details;
-                $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                'Reply-To: 2p2r@le-pic.org' . "\r\n" .
+                'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
 
                 $sql = "SELECT mail_users FROM users WHERE usertype_id_usertype = 1";
@@ -4095,8 +4097,8 @@ Cordialement, l\'application VelObs :)';
                 $pole_id_pole = $row[0];
 
                 /* envoi d'un mail aux administrateurs #pole# de l'association */
-                $headers = 'From: toulouse@fubicy.org' . "\r\n" .
-                'Reply-To: toulouse@fubicy.org' . "\r\n" .
+                $headers = 'From: 2p2r@le-pic.org' . "\r\n" .
+                'Reply-To: 2p2r@le-pic.org' . "\r\n" .
                 'Content-Type: text/plain; charset=UTF-8' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
 

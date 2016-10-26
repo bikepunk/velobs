@@ -51,15 +51,14 @@ var osmcyclemap2 = new OpenLayers.Layer.OSM("OpenStreetMap Cycle Map", "http://a
         'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a>'
     }
 );
-var mapquest2 = new OpenLayers.Layer.OSM("OpenStreetMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",
-    {
-        'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> - <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>'
-    }
-);
+//var mapquest2 = new OpenLayers.Layer.OSM("OpenStreetMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",
+//    {
+//        'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> - <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>'
+//    }
+//);
 
-adminMap.addLayers([mapquest2, osmcyclemap2, mapnik2]);
+adminMap.addLayers([osmcyclemap2, mapnik2]);
 adminMap.setBaseLayer(osmcyclemap2);
-adminMap.setBaseLayer(mapquest2);
 adminMap.setBaseLayer(mapnik2);
 adminMap.addControl(new OpenLayers.Control.Attribution());
 
@@ -319,8 +318,8 @@ function createFeatureAdminMap(X,Y,icon,lib,desc,prop,iconCls,id,photo,num,rue,c
         graphicHeight: 37,
         pointRadius:0
     };
-
-    feat.attributes = {"lib": lib, "desc": desc, "prop": prop, "iconCls": iconCls, "id": id, "photo": photo, "num": num, "rue": rue, "commune": commune, "repgt": repgt, "cmt": cmt, "date": date, "reppole": reppole, "traite": traite};
+    var templib = id + " " +lib;
+    feat.attributes = {"lib": templib, "desc": desc, "prop": prop, "iconCls": iconCls, "id": id, "photo": photo, "num": num, "rue": rue, "commune": commune, "repgt": repgt, "cmt": cmt, "date": date, "reppole": reppole, "traite": traite};
     vectorsAdminMap.addFeatures([feat]);
 }
 
@@ -422,9 +421,6 @@ var comboALL = new Ext.form.ComboBox({
             switch (this.getValue()) {
                 case 'mapnik':
                     adminMap.setBaseLayer(mapnik2);
-                    break;
-                case 'mapquest':
-                    adminMap.setBaseLayer(mapquest2);
                     break;
                 case 'osmcyclemap':
                     adminMap.setBaseLayer(osmcyclemap2);

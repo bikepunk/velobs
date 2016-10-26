@@ -63,11 +63,11 @@ var osmcyclemap2 = new OpenLayers.Layer.OSM("OpenStreetMap Cycle Map", "http://a
         'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a>'
     }
 );
-var mapquest2 = new OpenLayers.Layer.OSM("OpenStreetMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",
-	{
-		'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> - <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>'
-	}
-);
+//var mapquest2 = new OpenLayers.Layer.OSM("OpenStreetMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",
+//	{
+//		'attribution': '<a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> - <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>'
+//	}
+//);
 
 /*var hill = new OpenLayers.Layer.TMS("Hillshading (NASA SRTM3 v2)", "http://toolserver.org/~cmarqu/hill/", {
 	type: 'png',
@@ -95,9 +95,8 @@ var bingaerial2 = new OpenLayers.Layer.Bing({
 	type: "Aerial"
 });*/
 
-adminMap.addLayers([mapquest2, osmcyclemap2, mapnik2/*, bingroad2, binghybrid2, bingaerial2, hill*/]);
+adminMap.addLayers([osmcyclemap2, mapnik2/*, bingroad2, binghybrid2, bingaerial2, hill*/]);
 adminMap.setBaseLayer(osmcyclemap2);
-adminMap.setBaseLayer(mapquest2);
 adminMap.setBaseLayer(mapnik2);
 adminMap.addControl(new OpenLayers.Control.Attribution());
 
@@ -250,8 +249,8 @@ function createFeatureAdminMap(X,Y,icon,lib,desc,prop,iconCls,id,photo,num,rue,c
 		graphicHeight: 37,
 		pointRadius:0
 	};
-
-	feat.attributes = {"lib": lib, "desc": desc, "prop": prop, "iconCls": iconCls, "id": id, "photo": photo, "num": num, "rue": rue, "commune": commune, "repgt": repgt, "cmt": cmt, "date": date};
+	var templib = id + " " +lib;
+	feat.attributes = {"lib": templib, "desc": desc, "prop": prop, "iconCls": iconCls, "id": id, "photo": photo, "num": num, "rue": rue, "commune": commune, "repgt": repgt, "cmt": cmt, "date": date};
 	vectorsAdminMap.addFeatures([feat]);
 }
 
@@ -449,9 +448,6 @@ var comboALL = new Ext.form.ComboBox({
 			switch (this.getValue()) {
 				case 'mapnik':
 					adminMap.setBaseLayer(mapnik2);
-					break;
-				case 'mapquest':
-					adminMap.setBaseLayer(mapquest2);
 					break;
                 case 'osmcyclemap':
                     adminMap.setBaseLayer(osmcyclemap2);
@@ -653,10 +649,9 @@ var expandMap2 = new OpenLayers.Map(optionsExpandMap2);
 var mapnik3 = new OpenLayers.Layer.OSM("OpenStreetMap Mapnik", "http://tile.openstreetmap.org/${z}/${x}/${y}.png",
 	{'sphericalMercator': true, isBaseLayer:true}
 );
-var mapquest3 = new OpenLayers.Layer.OSM("OpenStrretMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
+//var mapquest3 = new OpenLayers.Layer.OSM("OpenStrretMap Mapquest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
 
-expandMap2.addLayers([mapquest3, mapnik3]);
-expandMap2.setBaseLayer(mapquest3);
+expandMap2.addLayers([mapnik3]);
 expandMap2.setBaseLayer(mapnik3);
 
 var expandMapPanel2 = new GeoExt.MapPanel({
